@@ -8,25 +8,16 @@ import Burger from "../images/burger.png"
 
 const Header = () => {
   
-  const nvm = useRef("")
-  const [active, setActive] = useState(false)
- 
 
-  useEffect(()=>{
-    const burger= document.querySelector(".burger");
- const navbar = document.querySelector(".navigation");
-    burger?.addEventListener("click",()=>{
-        //  (nvm.current).classList.toggle("addme")
-        navbar.classList.toggle("addme")
-      })
-  },[nvm])
-
- const burger= document.querySelector(".burger");
- const navbar = document.querySelector(".navigation");
- burger?.addEventListener(("click"),()=>{
-  navbar.classList.toggle(".addme")
- })
-  return (
+//  const burger = document.querySelector(".burger")
+ let bg = (e)=>{
+  // burger?.addEventListener("click",(e)=>{
+    const navbar = document.getElementById("nav");
+    navbar.classList.toggle("addme")
+  // })
+ }
+   
+  return (  
 
    
     <header className="header">'
@@ -34,9 +25,9 @@ const Header = () => {
       
       <div className="hide-logo">
       <img src={Logomain} />
-      <img src={Burger} alt="" className='burger' />
+      <img src={Burger} alt="" className='burger' onClick={bg}/>
       </div>
-        <nav className="navigation flex" ref={nvm}>
+        <nav className="navigation flex" id='nav'>
             <div className="nav-logo">
              <img src={Logomain} />
             </div>

@@ -95,6 +95,7 @@ const Customers = () => {
                   slidesPerView={3}
                   modules={[Navigation, Pagination]}
                   spaceBetween={20}
+                  loop={true}
                   onBeforeInit={(swiper) => {
                     swiperRef.current = swiper;
                   }}

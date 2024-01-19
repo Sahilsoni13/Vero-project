@@ -33,7 +33,7 @@ body {
   min-height: 80px;
 }
 .addme {
-  top: 0%;
+  top: 0 !important;
 }
 .hide-logo {
   display: flex;
@@ -112,6 +112,7 @@ body {
 
 .banner-right {
   position: relative;
+  margin-top: 67px;
 }
 
 .banner-bg-blue {
@@ -122,7 +123,7 @@ body {
   z-index: 999;
 }
 .bannerimg {
-  padding-right: 193px;
+  /* padding-right: 193px; */
 }
 
 .ankle-main {
@@ -136,7 +137,7 @@ body {
 }
 .expert {
   display: flex;
-  max-width: 371px;
+  min-width: 371px;
   background-color: #fff;
   border-radius: 62px;
   align-items: center;
@@ -173,7 +174,7 @@ footer {
   color: #a3a3a3;
 }
 .footer-main {
-  padding: 59px 0 65px 86px;
+  padding: 59px 10px 65px 10px;
 }
 .footer-top {
   display: grid;
@@ -306,7 +307,7 @@ footer {
 }
 .expertsprofile {
   padding: 14px 14px 0 14px;
-  max-width: 278px;
+  /* max-width: 278px; */
   background: #fff;
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.09);
   display: flex;
@@ -720,7 +721,7 @@ li {
   background: #fff;
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.09);
   min-height: 466px;
-  max-width: 278px;
+  /* max-width: 278px; */
   justify-items: center;
 }
 .Result h3 {
@@ -913,6 +914,10 @@ li {
   .footer-main {
     padding: 15px;
   }
+  /* .expert{
+   min-width: none;
+   max-width: 220px;
+  } */
 }
 
 @media screen and (max-width: 768px) {
@@ -1010,6 +1015,13 @@ li {
     flex-direction: column;
     row-gap: 10px;
   }
+  .expert{
+    min-width: 220px;
+  }
+  .common-font-grey{
+    font-size: 13.5px;
+    line-height: 25px;
+  }
 }
 @media screen and (max-width: 500px) {
   .expert-1 {
@@ -1060,6 +1072,9 @@ li {
     right: -12px;
     top: 365px;
   }
+  .expert{
+    max-width: 294px;
+  }
 }
 @media screen and (max-width: 425px) {
   .benefits-top h1,
@@ -1074,5 +1089,8 @@ li {
 
   .aboutvero-bottom-left img {
     width: 100%;
+  }
+  .benefits-bottom{
+    grid-template-columns: repeat(1,1fr);
   }
 }

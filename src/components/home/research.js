@@ -12,20 +12,24 @@ const Research = () => {
             <div className="researches">
               <Swiper
                 className="mySwiper"
-                slidesPerView={3}
+                slidesPerView={4}
+                loop={true}
                 breakpoints={{
-                  300: {
-                    slidesPerView: 1,
-                  },
-                  425: {
-                    slidesPerView: 1,
-                  },
-                  500: {
-                    slidesPerView: 2,
-                  },
-                  768: {
-                    slidesPerView: 3,
-                  },
+                    300:{
+                        slidesPerView:1
+                      },
+                      425: {
+                        slidesPerView: 1,
+                      },
+                      550: {
+                        slidesPerView: 2,
+                      },
+                      800: {
+                        slidesPerView: 3,
+                      },
+                      1200:{
+                        slidesPerView:4
+                      }
                 }}
                 
               >

@@ -4,6 +4,7 @@ import Card from "../../json/card.json"
 const Footer = () => {
   return (
     <footer className="footer">
+      <div className="container">
         <div className="footer-main">
             <div className="footer-top">
          <div className="footer-left">
@@ -53,6 +54,7 @@ const Footer = () => {
                    }
                 </div>
             </div>
+        </div>
         </div>
     </footer>
   )

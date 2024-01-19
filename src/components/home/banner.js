@@ -63,7 +63,7 @@ const Banner = () => {
           </div>
         </div>
         </div>
-        <div class="infinte">
+        <div className="infinte">
           <h1>Comfortable</h1>
           <h1>Adjustable</h1>
           <h1>Modular</h1>

@@ -17,7 +17,8 @@ const OurExperts = () => {
               <div className="expertperson">
                 <Swiper
                   className="mySwiper"
-                  slidesPerView={3} 
+                  slidesPerView={4} 
+                  loop={true}
                   breakpoints={{
                     300:{
                       slidesPerView:1
@@ -25,12 +26,15 @@ const OurExperts = () => {
                     425: {
                       slidesPerView: 1,
                     },
-                    500: {
+                    550: {
                       slidesPerView: 2,
                     },
-                    768: {
+                    800: {
                       slidesPerView: 3,
                     },
+                    1200:{
+                      slidesPerView:4
+                    }
                   }}
                 >
                   {Experts.map((item, index) => {
