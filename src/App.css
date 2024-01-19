@@ -1,38 +1,1078 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.common-black {
+  color: #1a1a1a;
+}
+.common-font-grey,
+.l-side ul li a {
+  font-size: 16.5px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+.header {
+  background: #fff;
+  margin-top: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  min-height: 80px;
+}
+.addme {
+  top: 0%;
+}
+.hide-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+}
+.hide-logo img {
+  position: unset;
+  z-index: 999;
+}
+.nav-logo img {
+  max-width: 97px;
+  width: 100%;
+}
+.mid-margin {
+  margin: 0 20px;
+}
+.navigation {
+  margin: 16px 120px;
+  align-items: center;
+  max-width: 1350px;
+  margin: auto;
+}
+.nav-menu {
+  max-width: 720px;
+  width: 100%;
+  justify-content: space-around;
+}
+.nav-menu li {
+  list-style: none;
+}
+.nav-menu li a {
+  text-decoration: none;
+  font-size: 16.5px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+.nav-icons img {
+  max-width: 19px;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* banner  section*/
+
+.banner-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 836px;
+  margin-top: 105px;
+}
+.banner-left h1 {
+  font-size: 53px;
+  line-height: 72px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  padding-top: 212px;
+  color: #2f3e7b;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.banner-left p {
+  max-width: 549px;
+  padding: 24px 0 48px 0;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2f3e7b;
+}
+.banner-left button {
+  font-size: 14.3px;
+  color: #fff;
+  padding: 17.48px 113.92px 18.52px 121px;
+  border-radius: 52px;
+  background: #2caae2;
+  border: none;
+}
+
+.banner-right {
+  position: relative;
+}
+
+.banner-bg-blue {
+  background-color: #222f63;
+}
+.ankle-main img {
+  margin-top: 67px;
+  z-index: 999;
+}
+.bannerimg {
+  padding-right: 193px;
+}
+
+.ankle-main {
+  position: relative;
+}
+
+.expert-middle {
+  position: absolute !important;
+  top: 326px;
+  left: 355px;
+}
+.expert {
+  display: flex;
+  max-width: 371px;
+  background-color: #fff;
+  border-radius: 62px;
+  align-items: center;
+  position: relative;
+  z-index: 999;
+}
+.expert-1 {
+  position: absolute;
+  top: 128px;
+  left: 310px;
+}
+.expert-3 {
+  position: absolute;
+  top: 490px;
+  left: 265px;
+}
+.expert h3 {
+  font-size: 18px;
+  font-weight: 700px;
+  color: #2b386c;
+}
+.expert p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #2b386c;
+}
+.expert img {
+  margin-right: 3px;
+}
+/* footer section */
+
+footer {
+  background: #1a1a1a;
+  color: #a3a3a3;
+}
+.footer-main {
+  padding: 59px 0 65px 86px;
+}
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 20px;
+}
+.footer-left {
+  max-width: 686.9px;
+}
+.footer-right {
+  display: flex;
+  margin-right: 77.8px;
+  justify-content: space-around;
+}
+.footer-content h2 {
+  margin: 20px 0 26px 0;
+}
+.footer-content h5 {
+  margin: 31px 0 35px 0;
+}
+.footer-content p {
+  line-height: 28px;
+}
+.l-side ul li {
+  list-style: none;
+}
+.l-side ul li a {
+  text-decoration: none;
+  line-height: 28px;
+  color: #fff;
+}
+.l-side ul h3 {
+  margin-bottom: 23.4px;
+}
+.r-side h3 {
+  padding: 4px 1.6px 0;
+}
+.footer-bottom {
+  margin-top: 44px;
+  display: flex;
+}
+.footer-bottom-left {
+  max-width: 873.3px;
+  width: 100%;
+}
+.footer-bottom-right {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-list img {
+  max-width: 38px;
+  width: 100%;
+  margin: 0 5px;
+}
+
+/* moving text */
+
+.infinte {
+  display: flex;
+  justify-content: flex-start;
+  background: #2b386c;
+  overflow: hidden;
+}
+
+.infinte h1 {
+  text-transform: uppercase;
+  color: transparent;
+  padding: 0 100px;
+  margin: 18px 0;
+  font-size: 24px;
+  -webkit-text-stroke-width: 0.1px;
+  color: #2caae2;
+  -webkit-text-stroke-color: red;
+  white-space: nowrap;
+  animation: loop 2000ms linear infinite;
+}
+@keyframes loop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
+.infinte:hover h1 {
+  -moz-animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+/*  Our experts section */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.expertsmain {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  max-width: 1248px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+.experttop {
+  display: flex;
+  flex-direction: column;
+}
+.expertperson {
+  /* display: grid; */
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  margin-bottom: 56px;
+  column-gap: 32px;
+}
+.expertheading {
+  text-align: center;
+}
+.expertheading h1 {
+  color: #2f3e7b;
+  font-size: 40px;
+  line-height: 48px;
+  font-family: "Oswald", sans-serif;
+  margin: 89px 0 48px 0;
+}
+.expertsprofile img {
+  max-width: 250px;
+}
+.expertsprofile h1 {
+  color: #2b386c;
+  font-family: Oswald;
+  font-size: 20px;
+}
+.expertsprofile {
+  padding: 14px 14px 0 14px;
+  max-width: 278px;
+  background: #fff;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.09);
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: start;
+  min-height: 466px;
+  height: 100%;
+}
+.expertsprofile h1,
+li {
+  text-align: left;
+  line-height: 24px;
+}
+.expertbottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 88px;
+  padding-top: 56px;
+  gap: 32px;
+}
+.expert-bottom-left h1 {
+  color: #2b386c;
+  font-family: Oswald;
+  font-size: 32px;
+  line-height: 28px;
+  padding-bottom: 24px;
+}
+
+.expert-bottom-left p {
+  color: #151c37;
+  font-size: 18px;
+  line-height: 28px;
+}
+.expert-bottom-right img {
+  max-width: 588px;
+  width: 100%;
+}
+.expert-bottom-right {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+/* about vero section */
+.about-vero {
+  background: #2b386c;
+  background-image: url("../src/components/images/Group\ 7485.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.aboutvero-heading {
+  padding: 72px 0 67px 0;
+}
+.aboutvero-heading h1 {
+  color: #fff;
+  font-size: 40px;
+  line-height: 48px;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+}
+.vero-specifications {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.vero-specifications img {
+  max-width: 605px;
+  width: 100%;
+}
+.logic-left img {
+  min-width: 96px;
+  width: 100%;
+}
+.logic-main {
+  display: flex;
+  align-items: center;
+  border-radius: 62px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  max-width: 394px;
+}
+.logic-right h1 {
+  color: #2b386c;
+  font-family: Oswald;
+  font-size: 18px;
+}
+.logic-right p {
+  color: #2b386c;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+.logic-main1 {
+  position: absolute;
+  left: 80px;
+  top: 155px;
+}
+.logic-main2 {
+  position: absolute;
+  left: 112px;
+  top: 366px;
+}
+.logic-main3 {
+  position: absolute;
+  top: 590px;
+  left: 195px;
+}
+.logic-main4 {
+  position: absolute;
+  right: 175px;
+  top: 45px;
 }
 
-.App-link {
-  color: #61dafb;
+.logic-main5 {
+  position: absolute;
+  right: 40px;
+  top: 315px;
+}
+.logic-main6 {
+  position: absolute;
+  right: 60px;
+  top: 545px;
+}
+.about-vero-logic {
+  position: absolute;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.aboutvero-middle {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  padding: 88px 0;
+  gap: 38px;
+}
+.aboutvero-middle-left h1 {
+  color: #fff;
+  line-height: 28px;
+  font-size: 32px;
+  font-family: "Oswald", sans-serif;
+  padding-bottom: 24px;
+}
+.aboutvero-middle-left p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 28px;
+}
+.aboutvero-middle-left {
+  max-width: 673px;
+  width: 100%;
+}
+.aboutvero-middle-right img {
+  max-width: 465px;
+  width: 100%;
+  max-height: 304px;
+  height: 100%;
+}
+.about-content {
+  max-width: 305px;
+  width: 100%;
+  padding-bottom: 40px;
+  padding-right: 31px;
+}
+.about-content h3 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 4px;
+}
+.about-content p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.aboutvero-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.aboutvero-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+}
+
+.aboutvero-bottom-right h1 {
+  color: #fff;
+  font-size: 32px;
+  line-height: 28px;
+  font-weight: 500;
+  padding-bottom: 37px;
+}
+.aboutvero-button {
+  text-align: center;
+}
+.aboutvero-button button {
+  color: #fff;
+  font-size: 14.3px;
+  font-weight: 700;
+  line-height: 25.03px;
+  padding: 17.48px 113.925px 18.52px 121px;
+  border-radius: 52px;
+  background: #2caae2;
+  border: none;
+  margin-bottom: 64px;
+}
+
+/* vero benefits section */
+
+.benefits-top {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.benefits-top h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 48px;
+  color: #2f3e7b;
+  padding: 0 0 24px 0;
+}
+.benefits-top p {
+  max-width: 987px;
+  text-align: center;
+  padding-bottom: 41px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2b386c;
+  font-family: "Roboto", sans-serif;
+}
+.benefits-main {
+  padding: 80px 0;
+}
+.benefit-container {
+  max-width: 288px;
+  text-align: center;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 16px;
+  min-height: 248px;
+}
+
+.benefit-container h3 {
+  padding: 16px 0;
+}
+.benefit-container p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.benefits-bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 24px;
+}
+
+/* customers section */
+
+.customers {
+  background: #2b386c;
+  position: relative;
+}
+.customers-heading h1 {
+  font-size: 48px;
+  line-height: 48px;
+  color: #fff;
+  text-align: center;
+  padding: 80px 0 56px 0;
+}
+.customers-left,
+.customers-right {
+  max-width: 555px;
+  border-radius: 8px;
+  background: #fff;
+  padding: 8px 8px 0 8px;
+}
+.customer-cont {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 64px;
+  column-gap: 64px;
+}
+.customers-left img,
+.customers-right img {
+  width: 100%;
+}
+.customers-left h3,
+.customers-right h3 {
+  font-size: 20px;
+  line-height: 32px;
+  color: #2b386c;
+  font-weight: 700;
+  padding-top: 13px;
+}
+.customers-left p,
+.customers-right p {
+  font-size: 16px;
+  color: #2b386c;
+  line-height: 19px;
+  padding: 11px 0 17px 0;
+}
+.swipe-me {
+  max-width: 369px;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 14px 14px 10px 10px;
+}
+.swipe-me h3 {
+  font-size: 18px;
+  color: #fff;
+  line-height: 24px;
+}
+
+.swipe-me p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 23px;
+  padding-top: 15px;
+  padding-bottom: 24px;
+  margin-bottom: 32px;
+}
+.swipe-heading {
+  display: flex;
+  justify-content: space-between;
+}
+.swipe-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.float-main {
+  display: flex;
+  justify-content: center;
+}
+.float-content {
+  max-width: 1058px;
+  border-radius: 8px;
+  background: #2caae2;
+  padding: 32px 0 40px 0;
+  margin-bottom: -140px;
+  margin-top: 88px;
+}
+
+.float-content h1 {
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  padding-bottom: 24px;
+}
+.float-content p {
+  font-size: 24px;
+  color: #fff;
+  line-height: 32px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 32px;
+}
+.float-content button {
+  padding: 17.48px 0 18.52px 0;
+  color: #2caae2;
+  border-radius: 52px;
+  background: #fff;
+  max-width: 329px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  margin: auto;
+  font-size: 14.3px;
+  font-weight: 700;
+  line-height: 25.03px;
+  text-transform: uppercase;
+}
+.float-button {
+  display: flex;
+  margin: auto;
+}
+
+/* research-section */
+
+.research-main h1 {
+  padding-top: 212px;
+  font-size: 40px;
+  line-height: 48px;
+  color: #2f3e7b;
+  font-weight: 700;
+  text-align: center;
+}
+.researches {
+  margin-top: 48px;
+  /* display: grid; */
+  grid-template-columns: repeat(4, 1fr);
+  justify-self: center;
+  column-gap: 32px;
+}
+.researches img {
+  /* max-width: 250px; */
+  width: 100%;
+}
+.Result {
+  padding: 14px 14px 0 14px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.09);
+  min-height: 466px;
+  max-width: 278px;
+  justify-items: center;
+}
+.Result h3 {
+  font-size: 20px;
+  color: #2b386c;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  padding: 13px 0 8px 0;
+}
+
+.Result p {
+  color: #151c37;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+.research-button {
+  margin: 56px 0;
+  text-align: center;
+}
+.research-button button {
+  color: #2caae2;
+  font-size: 14.3px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 25.03px;
+  padding: 12.48px 0 13.52px 0;
+  background-color: #fff;
+  border: 2px solid #2caae2;
+  border-radius: 50px;
+  max-width: 329px;
+  width: 100%;
+}
+
+.swiper_section {
+  display: flex;
+  gap: 10px;
+}
+
+/*   responsive design css  */
+
+@media screen and (max-width: 1290px) {
+  /* banner section */
+
+  .banner-left h1 {
+    font-size: 43px;
   }
-  to {
-    transform: rotate(360deg);
+
+  /* expert section */
+
+  .expertperson {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* about sectino */
+
+  .about-content {
+    padding-right: 0;
+  }
+
+  /* expert-section */
+
+  .expert-1 {
+    left: 260px;
+  }
+  .expert-3 {
+    left: 215px;
+  }
+  .expert-middle {
+    left: 305px;
+  }
+  .bannerimg {
+    padding-right: 100px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .expert-1 {
+    left: 210px;
+  }
+  .expert-3 {
+    left: 165px;
+  }
+  .expert-middle {
+    left: 255px;
+  }
+
+  .banner-left h1 {
+    padding-top: 50px;
+  }
+  .bannerimg {
+    padding-right: 75px;
+  }
+  .researches {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .banner-section {
+    background: #2b386c;
+  }
+  .banner-left {
+    margin-bottom: 40px;
+  }
+  .banner-main {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .banner-left h1,
+  .banner-left p {
+    color: #fff;
+    text-align: center;
+  }
+  .nav-logo img {
+    display: none;
+  }
+  .navigation {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    top: -500%;
+    right: 0;
+    transition: 0.5s ease;
+  }
+  .navigation,
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-menu li {
+    padding: 10px 0;
+  }
+  .nav-icons {
+    padding: 10px 0;
+  }
+  .expertbottom {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* about sectin */
+
+  .aboutvero-middle {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .aboutvero-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* benefits section */
+
+  .benefits-bottom {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* customer section */
+
+  .customer-cont {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+  }
+  .researches {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .navigation {
+    margin-top: 70px;
+  }
+  .hide-logo {
+    display: block;
+    display: flex;
+  }
+}
+@media screen and (max-width: 905px) {
+  .expertperson {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .swipe-me h3 {
+    font-size: 12px;
+  }
+  .swipe-me p {
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .footer-top {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-right {
+    justify-content: unset;
+  }
+  .footer-main {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutvero-content {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    text-align: center;
+  }
+  .aboutvero-button button {
+    width: 100%;
+  }
+  .benefits-bottom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .logic-main {
+    max-width: 350px;
+  }
+  .logic-main h3 {
+    font-size: 14px;
+  }
+  .logic-main p {
+    font-size: 10px;
+  }
+  .logic-main img {
+    min-width: 70px;
+  }
+  .banner-left {
+    margin-bottom: 40px;
+  }
+
+  .bannerimg {
+    padding-right: 0;
+    width: 100%;
+  }
+  .expert-1 {
+    left: 160px;
+  }
+  .expert-middle {
+    left: 170px;
+  }
+  .expert-3 {
+    left: 115px;
+  }
+  .logic-main1 {
+    left: 390px;
+    top: 122px;
+  }
+  .logic-main2 {
+    left: 45px;
+    top: 375px;
+  }
+  .logic-main3 {
+    top: 590px;
+    left: 80px;
+  }
+  .logic-main4 {
+    right: 400px;
+    top: 70px;
+  }
+  .logic-main5 {
+    right: -15px;
+    top: 300px;
+  }
+  .logic-main6 {
+    right: 41px;
+    top: 500px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .expertperson {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .benefits-top h1,
+  .customers-heading h1,
+  .float-content h1,
+  .research-main h1 {
+    font-size: 35px;
+  }
+  .banner-left h1 {
+    font-size: 36px;
+    line-height: 51px;
+  }
+  .expert h3 {
+    font-size: 13px;
+  }
+  .expert p {
+    font-size: 10px;
+  }
+  .expert img {
+    max-width: 58px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .expert-1 {
+    left: 137px;
+    top: 0;
+  }
+  .expert-3 {
+    left: 105px;
+    top: 349px;
+  }
+  .expert-middle {
+    left: 16px;
+    top: 219px;
+  }
+  .logic-main {
+    max-width: 220px;
+  }
+  .logic-main img {
+    min-width: 55px;
+  }
+  .logic-right h1 {
+    font-size: 10px;
+  }
+  .logic-main p {
+    font-size: 8px;
+  }
+  .logic-main1 {
+    left: -16px;
+    top: 10px;
+  }
+  .logic-main2 {
+    left: -20px;
+    top: 205px;
+  }
+  .logic-main3 {
+    top: 310px;
+    left: -16px;
+  }
+  .logic-main4 {
+    right: -20px;
+    top: 61px;
+  }
+  .logic-main5 {
+    right: -20px;
+    top: 262px;
+  }
+  .logic-main6 {
+    right: -12px;
+    top: 365px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .benefits-top h1,
+  .customers-heading h1,
+  .float-content h1,
+  .research-main h1 {
+    font-size: 26px;
+  }
+  .aboutvero-bottom-right h1 {
+    font-size: 24px;
+  }
+
+  .aboutvero-bottom-left img {
+    width: 100%;
   }
 }

@@ -1,0 +1,22 @@
+[
+    {
+        "expert-pic":"doctor1.png",
+        "expert-name":"Bryan Den Hartog M.D.",
+        "expert-bio":"Twin Cities Orthopedics 30+ years of clinical practice with focus in sports Over 30 issued US patents Design consultant with 5 implant companies"
+    },
+    {
+        "expert-pic":"doctor2.png",
+        "expert-name":"David Kay M.D.",
+        "expert-bio":"Crystal Clinic Orthopedic Center  30+ years of clinical practice in F&A + Trauma  Founder of OrthoHelix Over 30 issued US patents"
+    },
+    {
+        "expert-pic":"doctor3.png",
+        "expert-name":"Ned Amendola M.D.",
+        "expert-bio":"Professor of Orthopaedic Surgery, Duke University Director, Urbaniak Sports Sciences Institute Head Team Physician, Duke University"
+    },
+    {
+        "expert-pic":"doctor4.png",
+        "expert-name":"Anthony Perera M.D.",
+        "expert-bio":"Spire Cardiff (UK) 13 years of practice in F&A + Sports Med  International Cricket Team Physician  F+A surgeon to elite rugby in England and Wales Board of International Ankle Instability Group"
+    }
+]
