@@ -103,12 +103,14 @@ a {
   border: 2px solid #2caae2;
   color: #2caae2;
   transition: 0.2s ease;
+  cursor: pointer;
 }
 .liquid-capsules:hover {
   background-color: #2caae2;
   color: #fff;
   border: 2px solid #fff;
   transition: 0.2s ease;
+  cursor: pointer;
 }
 .header {
   background: #fff;
@@ -118,7 +120,7 @@ a {
   right: 0;
   left: 0;
   z-index: 9999;
-  min-height: 80px;
+  padding: 16px 0;
 }
 .addme {
   top: 0 !important;
@@ -164,11 +166,19 @@ a {
   max-width: 19px;
   width: 100%;
 }
+.nav-icons img:hover{
+  cursor: pointer;
+}
+.fa-solid{
+  font-size: 25px;
+  z-index: 999;
+}
+
 /* banner  section*/
 .banner-main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 105px;
+  margin-top: 67px;
 }
 .banner-heading {
   font-size: 53px;
@@ -236,6 +246,12 @@ a {
 }
 .expert img {
   margin-right: 3px;
+}
+.expert-bio{
+  font-size: 14px;
+}
+.expert-heading{
+  font-size: 18px;
 }
 /* footer section */
 
@@ -820,7 +836,22 @@ footer {
   .benefits-bottom {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .blockme{
+    display: block;
+  }
+  .blockme1{
+  display: block;
+  }
+.burger{
+  display: none;
+
+}
+.showme{
+  display: block;
+}
   /* customer section */
+
   .customer-cont {
     flex-direction: column;
     align-items: center;
@@ -833,7 +864,7 @@ footer {
     margin-top: 70px;
   }
   .hide-logo {
-    display: block;
+    /* display: block; */
     display: flex;
   }
 }

@@ -3,7 +3,7 @@ import Ankle from "../images/Ankle.png";
 import img1 from "../images/img1.png";
 import img2 from "../images/img2.png";
 import img3 from "../images/img3.png";
-
+import Fade from 'react-reveal/Fade';
 const Banner = () => {
   return (
     <>
@@ -11,7 +11,7 @@ const Banner = () => {
         <div className="container">
         <div className="banner-main">
           <div className="banner-left">
-            <h1 className="banner-heading common-bg-midblue">
+          <h1 className="banner-heading common-bg-midblue">
               Your Path to Enhanced Recovery and Support
             </h1>
             <p className="banner-left-p common-bg-midblue mid-p-bio">
@@ -74,6 +74,7 @@ const Banner = () => {
           <h1>Flexible</h1>
           <h1>Supportive</h1>
         </div>
+        
       </section>
     </>
   );
