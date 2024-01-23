@@ -8,11 +8,12 @@ const Research = () => {
       <section className="research-section">
         <div className="container">
           <div className="research-main">
-            <h1>ADVICE, RESEARCH, TECHNIQUES AND MORE</h1>
+            <h1 className="main-common-heading research-main-h1 common-bg-midblue">ADVICE, RESEARCH, TECHNIQUES AND MORE</h1>
             <div className="researches">
               <Swiper
                 className="mySwiper"
                 slidesPerView={4}
+                spaceBetween={20}
                 loop={true}
                 breakpoints={{
                     300:{
@@ -41,8 +42,8 @@ const Research = () => {
                           src={require(`../images/${item["research-image"]}`)}
                           alt=""
                         />
-                        <h3>{item["research-head"]}</h3>
-                        <p>{item["research-bio"]}</p>
+                        <h3 className=".swipe-text-heading common-bg-blue font-oswald">{item["research-head"]}</h3>
+                        <p className="swipe-text-bio">{item["research-bio"]}</p>
                       </div>
                     </SwiperSlide>
                   );
@@ -50,7 +51,7 @@ const Research = () => {
               </Swiper>
             </div>
             <div className="research-button">
-              <button type="button">View All posts</button>
+              <button type="button" className="liquid-capsules">View All posts</button>
             </div>
           </div>
         </div>

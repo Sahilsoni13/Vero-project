@@ -32,14 +32,14 @@ const Header = () => {
              <img src={Logomain} />
             </div>
             <div className="nav-menu flex">
-             <li><Link to="#" className='common-black'>Home</Link></li>
-             <li><Link to="#" className='common-black'>About Us</Link></li>
-             <li><Link to="#" className='common-black'>About Our Brace</Link></li>
-             <li><Link to="#" className='common-black'>Shop</Link></li>
-             <li><Link to="#" className='common-black'>Instructions</Link></li>
-             <li><Link to="#" className='common-black'>FAQ</Link></li>
-             <li><Link to="#" className='common-black'>Rehab Resources</Link></li>
-             <li><Link to="#" className='common-black'>Contact</Link></li>
+             <li><Link to="#" className=' navlinks'>Home</Link></li>
+             <li><Link to="#" className=' navlinks'>About Us</Link></li>
+             <li><Link to="#" className=' navlinks'>About Our Brace</Link></li>
+             <li><Link to="#" className=' navlinks'>Shop</Link></li>
+             <li><Link to="#" className=' navlinks'>Instructions</Link></li>
+             <li><Link to="#" className=' navlinks'>FAQ</Link></li>
+             <li><Link to="#" className=' navlinks'>Rehab Resources</Link></li>
+             <li><Link to="#" className=' navlinks'>Contact</Link></li>
             </div>
             <div className="nav-icons flex">
              <img src={Search} />

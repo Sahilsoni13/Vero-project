@@ -58,12 +58,12 @@ const Customers = () => {
           <div className="customers-main">
             <div className="customers-top">
               <div className="customers-heading">
-                <h1>HEAR FROM OUR CUSTOMERS</h1>
+                <h1 className="main-common-heading common-white  ">HEAR FROM OUR CUSTOMERS</h1>
                 <div className="customer-cont">
                   <div className="customers-left">
                     <img src={customer1} alt="" />
-                    <h3>How Patrick Got Back On The Golf Course</h3>
-                    <p>
+                    <h3 className="customers-common-tittle common-bg-blue ">How Patrick Got Back On The Golf Course</h3>
+                    <p className="customers-common-bio common-bg-blue ">
                       Patrick talks about how the Vero Ankle Brace has allowed
                       him to return to playing golf and performing other
                       everyday activities after a severe ankle sprain was
@@ -72,11 +72,11 @@ const Customers = () => {
                   </div>
                   <div className="customers-right">
                     <img src={customer2} alt="" />
-                    <h3>
+                    <h3 className="customers-common-tittle common-bg-blue ">
                       Macy Talks Her Road To Recovery with VeroAnkle™ Ankle
                       Brace
                     </h3>
-                    <p>
+                    <p className="customers-common-bio common-bg-blue ">
                       In this video, Macy talks about how the VeroAnkle™ ankle
                       brace helped her recover from a severely injured ankle in
                       her college basketball career.
@@ -120,13 +120,13 @@ const Customers = () => {
                       <SwiperSlide>
                         <div className="swipe-me">
                           <div className="swipe-heading">
-                            <h3>{item.swipehead}</h3>
+                            <h3 className="swiper-text-heading ">{item.swipehead}</h3>
                             <img
                               src={require(`../images/${item.swipeimg}`)}
                               alt="ERERE"
                             />
                           </div>
-                          <p>{item.swiperbio}</p>
+                          <p className="swiper-text-bio " >{item.swiperbio}</p>
                         </div>
                       </SwiperSlide>
                     );
@@ -140,13 +140,13 @@ const Customers = () => {
               </div>
               <div className="float-main">
                 <div className="float-content">
-                  <h1>POWER UP YOUR RECOVERY</h1>
-                  <p>
+                  <h1 className="float-content-h1 main-common-heading common-white">POWER UP YOUR RECOVERY</h1>
+                  <p className="float-content-p common-white">
                     The ankle brace designed to get you back into action faster
                     and supercharge your performance.
                   </p>
                   <div className="float-button">
-                    <button type="button">Shop Now </button>
+                    <button type="button" className="float-content-button ">Shop Now </button>
                   </div>
                 </div>
               </div>

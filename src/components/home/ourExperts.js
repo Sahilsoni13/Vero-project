@@ -12,12 +12,13 @@ const OurExperts = () => {
           <div className="expertsmain">
             <div className="experttop">
               <div className="expertheading">
-                <h1>Designed by experts </h1>
+                <h1 className="main-common-heading common-bg-midblue">Designed by experts </h1>
               </div>
               <div className="expertperson">
                 <Swiper
                   className="mySwiper"
                   slidesPerView={4} 
+                  spaceBetween={20}
                   loop={true}
                   breakpoints={{
                     300:{
@@ -45,8 +46,8 @@ const OurExperts = () => {
                             src={require(`../images/${item["expert-pic"]}`)}
                             alt=""
                           />
-                          <h1>{item["expert-name"]}</h1>
-                          <li>{item["expert-bio"]}</li>
+                          <h1 className="swipe-text-heading">{item["expert-name"]}</h1>
+                          <li className="swipe-text-bio">{item["expert-bio"]}</li>
                         </div>
                       </SwiperSlide>
                     );
@@ -56,8 +57,8 @@ const OurExperts = () => {
             </div>
             <div className="expertbottom">
               <div className="expert-bottom-left">
-                <h1>Our Journey</h1>
-                <p>
+                <h1 className="common-bg-blue">Our Journey</h1>
+                <p className="common-dark-blue">
                   As renowned foot and ankle orthopedic surgeons specializing in
                   sports injuries, we've witnessed a troubling trend over two
                   decades – increasing re-injury rates after ankle sprains,

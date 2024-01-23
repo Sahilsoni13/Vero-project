@@ -17,7 +17,7 @@ const Aboutvero = () => {
         <div className="aboutvero-main">
           <div className="aboutvero-top">
             <div className="aboutvero-heading">
-              <h1>The Vero Ankle™ Brace</h1>
+              <h1 className="main-common-heading common-white">The Vero Ankle™ Brace</h1>
             </div>
             <div className="vero-specifications">
               <img src={Aboutveroimg} alt="" />
@@ -27,8 +27,8 @@ const Aboutvero = () => {
                     <img src={Design1} alt="" />
                   </div>
                   <div className="logic-right">
-                    <h1>Adaptable Hinge Feature</h1>
-                    <p>
+                    <h1 className="logic-text common-bg-blue">Adaptable Hinge Feature</h1>
+                    <p className="logic-bio common-bg-blue">
                       Tailored to align with your ankle's natural ligament
                       constraints, ensuring precise and proper support
                     </p>
@@ -39,8 +39,8 @@ const Aboutvero = () => {
                     <img src={Design2} alt="" />
                   </div>
                   <div className="logic-right">
-                    <h1>Modular Stirrups Feature</h1>
-                    <p>
+                    <h1 className="logic-text common-bg-blue">Modular Stirrups Feature</h1>
+                    <p className="logic-bio common-bg-blue">
                       Provide vital initial support for severe ankle injuries,
                       and as healing progresses, customize strap adjustments for
                       a snug fit.
@@ -52,8 +52,8 @@ const Aboutvero = () => {
                     <img src={Design3} alt="" />
                   </div>
                   <div className="logic-right">
-                    <h1>Breathable Design</h1>
-                    <p>
+                    <h1 className="logic-text common-bg-blue">Breathable Design</h1>
+                    <p className="logic-bio common-bg-blue">
                       With perforated holes, the boot ensures airflow,
                       preventing the perspiration buildup and skin irritation
                       often caused by traditional braces
@@ -65,8 +65,8 @@ const Aboutvero = () => {
                     <img src={Design4} alt="" />
                   </div>
                   <div className="logic-right">
-                    <h1>EASY ON, EASY OFF</h1>
-                    <p>
+                    <h1 className="logic-text common-bg-blue">EASY ON, EASY OFF</h1>
+                    <p className="logic-bio common-bg-blue">
                       Our simple velcro strapping system allows you to adjust
                       your fit on the fly. No more knots or spaghetti laces
                     </p>
@@ -77,8 +77,8 @@ const Aboutvero = () => {
                     <img src={Design5} alt="" />
                   </div>
                   <div className="logic-right">
-                    <h1>MODULAR DESIGN</h1>
-                    <p>
+                    <h1 className="logic-text common-bg-blue">MODULAR DESIGN</h1>
+                    <p className="logic-bio common-bg-blue">
                       A single brace for each stage of recovery. Add or remove
                       the padded inserts depending on the level of support you
                       need.
@@ -90,8 +90,8 @@ const Aboutvero = () => {
                     <img src={Design6} alt="" />
                   </div>
                   <div className="logic-right">
-                    <h1>FLEXIBLE MATERIAL</h1>
-                    <p>
+                    <h1 className="logic-text common-bg-blue ">FLEXIBLE MATERIAL</h1>
+                    <p className="logic-bio common-bg-blue" >
                       The perfect balance between support and mobility.
                       BioMemory™ material keeps you protected while staying
                       active.
@@ -103,8 +103,8 @@ const Aboutvero = () => {
           </div>
           <div className="aboutvero-middle">
             <div className="aboutvero-middle-left">
-              <h1>Designed With Humans In Mind</h1>
-              <p>
+              <h1 className="benefits-h1 common-white">Designed With Humans In Mind</h1>
+              <p className="mid-p-bio common-white">
                 Comfortable, low profile, flexible and easy to put on, the Vero
                 Ankle™ brace is simply the best ankle brace for those who move.
                 Whether youre recovering from an ankle sprain, require extra
@@ -128,14 +128,14 @@ const Aboutvero = () => {
                <img src={Verogroup} alt="" />
             </div>
             <div className="aboutvero-bottom-right">
-            <h1>The Vero Ankle™ Brace is perfect for</h1>
+            <h1 className="benefits-h1 aboutvero-bottom-right-h1 common-white">The Vero Ankle™ Brace is perfect for</h1>
             <div className="aboutvero-content">
              {
               Aboutcontent.map((item,index)=>{
                 return(
                   <div className="about-content" key={index}>
-                    <h3>{item['about-vero-heading']}</h3>
-                    <p>{item["about-vero-bio"]}</p>
+                    <h3 className="about-content-h3 common-white">{item['about-vero-heading']}</h3>
+                    <p className="common-page-bio common-white">{item["about-vero-bio"]}</p>
                   </div>
                 )
               })
@@ -144,7 +144,7 @@ const Aboutvero = () => {
             </div>
           </div>
           <div className="aboutvero-button">
-          <button type="button">Shop Now</button>
+          <button type="button " className="common-white solid-capsules">Shop Now</button>
 
           </div>
         </div>

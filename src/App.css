@@ -5,22 +5,110 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  margin: 0;
-  padding: 0;
+ul li,
+ol li,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.font-robo {
+  font-family: "Roboto", sans-serif;
+}
+.font-oswald {
+  font-family: "Oswald", sans-serif;
+}
+.main-common-heading {
+  font-size: 40px;
+  line-height: 120%;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  text-align: center;
+  text-transform: uppercase;
 }
 .flex {
   display: flex;
   justify-content: space-between;
 }
-.common-black {
-  color: #1a1a1a;
+.common-bg-blue {
+  color: #2b386c;
+}
+.common-dark-blue {
+  color: #151c37;
+}
+.common-bg-midblue {
+  color: #2f3e7b;
+}
+.common-white {
+  color: #fff;
+}
+.common-bg-black {
+  color: #000;
+}
+.swipe-text-heading {
+  color: #2b386c;
+  font-family: Oswald;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 13px 0 8px 0;
+}
+.swipe-text-bio {
+  color: #151c37;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
 }
 .common-font-grey,
 .l-side ul li a {
   font-size: 16.5px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
+}
+.swiper-text-heading {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 133.333%; /* 133.333% */
+}
+.swiper-text-bio {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 143.75%;
+  padding-top: 15px;
+  margin-bottom: 32px;
+}
+.common-page-bio {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.benefit-container-h3 {
+  padding: 16px 0;
+}
+.mid-p-bio {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  line-height: 155.556%;
+}
+.benefits-h1 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 87.5%;
+}
+.solid-capsules:hover {
+  background-color: #fff;
+  border: 2px solid #2caae2;
+  color: #2caae2;
+  transition: 0.2s ease;
+}
+.liquid-capsules:hover {
+  background-color: #2caae2;
+  color: #fff;
+  border: 2px solid #fff;
+  transition: 0.2s ease;
 }
 .header {
   background: #fff;
@@ -55,66 +143,60 @@ body {
 .navigation {
   margin: 16px 120px;
   align-items: center;
-  max-width: 1350px;
   margin: auto;
 }
 .nav-menu {
   max-width: 720px;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-.nav-menu li {
-  list-style: none;
-}
-.nav-menu li a {
-  text-decoration: none;
+.navlinks {
   font-size: 16.5px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
+  color: #1a1a1a;
+}
+.navlinks:hover {
+  color: #2caae2;
+  transition: 0.2s ease;
 }
 .nav-icons img {
   max-width: 19px;
   width: 100%;
 }
-
 /* banner  section*/
-
 .banner-main {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 836px;
   margin-top: 105px;
 }
-.banner-left h1 {
+.banner-heading {
   font-size: 53px;
   line-height: 72px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  padding-top: 212px;
-  color: #2f3e7b;
 }
-
-.banner-left p {
+.banner-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.banner-left-p {
   max-width: 549px;
   padding: 24px 0 48px 0;
-  font-size: 20px;
-  line-height: 24px;
-  color: #2f3e7b;
 }
 .banner-left button {
   font-size: 14.3px;
-  color: #fff;
   padding: 17.48px 113.92px 18.52px 121px;
   border-radius: 52px;
   background: #2caae2;
-  border: none;
+  border: 2px solid #fff;
 }
-
 .banner-right {
   position: relative;
   margin-top: 67px;
 }
-
 .banner-bg-blue {
   background-color: #222f63;
 }
@@ -123,13 +205,11 @@ body {
   z-index: 999;
 }
 .bannerimg {
-  /* padding-right: 193px; */
+  width: 100%;
 }
-
 .ankle-main {
   position: relative;
 }
-
 .expert-middle {
   position: absolute !important;
   top: 326px;
@@ -153,16 +233,6 @@ body {
   position: absolute;
   top: 490px;
   left: 265px;
-}
-.expert h3 {
-  font-size: 18px;
-  font-weight: 700px;
-  color: #2b386c;
-}
-.expert p {
-  font-size: 14px;
-  font-weight: 400;
-  color: #2b386c;
 }
 .expert img {
   margin-right: 3px;
@@ -198,13 +268,8 @@ footer {
 .footer-content p {
   line-height: 28px;
 }
-.l-side ul li {
-  list-style: none;
-}
 .l-side ul li a {
-  text-decoration: none;
   line-height: 28px;
-  color: #fff;
 }
 .l-side ul h3 {
   margin-bottom: 23.4px;
@@ -229,6 +294,10 @@ footer {
   width: 100%;
   margin: 0 5px;
 }
+.footer-links:hover {
+  color: #a3a3a3;
+  transition: 0.2s ease;
+}
 
 /* moving text */
 
@@ -238,7 +307,6 @@ footer {
   background: #2b386c;
   overflow: hidden;
 }
-
 .infinte h1 {
   text-transform: uppercase;
   color: transparent;
@@ -291,36 +359,20 @@ footer {
   text-align: center;
 }
 .expertheading h1 {
-  color: #2f3e7b;
-  font-size: 40px;
-  line-height: 48px;
-  font-family: "Oswald", sans-serif;
   margin: 89px 0 48px 0;
 }
 .expertsprofile img {
   max-width: 250px;
 }
-.expertsprofile h1 {
-  color: #2b386c;
-  font-family: Oswald;
-  font-size: 20px;
-}
 .expertsprofile {
   padding: 14px 14px 0 14px;
-  /* max-width: 278px; */
+  max-width: 278px;
   background: #fff;
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.09);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: start;
-  min-height: 466px;
-  height: 100%;
-}
-.expertsprofile h1,
-li {
-  text-align: left;
-  line-height: 24px;
 }
 .expertbottom {
   display: grid;
@@ -330,15 +382,12 @@ li {
   gap: 32px;
 }
 .expert-bottom-left h1 {
-  color: #2b386c;
   font-family: Oswald;
   font-size: 32px;
   line-height: 28px;
   padding-bottom: 24px;
 }
-
 .expert-bottom-left p {
-  color: #151c37;
   font-size: 18px;
   line-height: 28px;
 }
@@ -361,13 +410,6 @@ li {
 .aboutvero-heading {
   padding: 72px 0 67px 0;
 }
-.aboutvero-heading h1 {
-  color: #fff;
-  font-size: 40px;
-  line-height: 48px;
-  font-family: "Oswald", sans-serif;
-  text-align: center;
-}
 .vero-specifications {
   display: flex;
   justify-content: center;
@@ -389,13 +431,11 @@ li {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   max-width: 394px;
 }
-.logic-right h1 {
-  color: #2b386c;
+.logic-text {
   font-family: Oswald;
   font-size: 18px;
 }
-.logic-right p {
-  color: #2b386c;
+.logic-bio {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
@@ -419,7 +459,6 @@ li {
   right: 175px;
   top: 45px;
 }
-
 .logic-main5 {
   position: absolute;
   right: 40px;
@@ -434,7 +473,6 @@ li {
   position: absolute;
   width: 100%;
 }
-
 .aboutvero-middle {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -443,17 +481,12 @@ li {
   gap: 38px;
 }
 .aboutvero-middle-left h1 {
-  color: #fff;
   line-height: 28px;
   font-size: 32px;
   font-family: "Oswald", sans-serif;
   padding-bottom: 24px;
 }
-.aboutvero-middle-left p {
-  color: #fff;
-  font-size: 18px;
-  line-height: 28px;
-}
+
 .aboutvero-middle-left {
   max-width: 673px;
   width: 100%;
@@ -470,17 +503,10 @@ li {
   padding-bottom: 40px;
   padding-right: 31px;
 }
-.about-content h3 {
-  color: #fff;
+.about-content-h3 {
   font-size: 18px;
   font-weight: 700;
   padding-bottom: 4px;
-}
-.about-content p {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19px;
 }
 .aboutvero-content {
   display: grid;
@@ -491,26 +517,20 @@ li {
   justify-content: center;
   gap: 34px;
 }
-
-.aboutvero-bottom-right h1 {
-  color: #fff;
-  font-size: 32px;
-  line-height: 28px;
-  font-weight: 500;
+.aboutvero-bottom-right-h1 {
   padding-bottom: 37px;
 }
 .aboutvero-button {
   text-align: center;
 }
 .aboutvero-button button {
-  color: #fff;
   font-size: 14.3px;
   font-weight: 700;
   line-height: 25.03px;
   padding: 17.48px 113.925px 18.52px 121px;
   border-radius: 52px;
   background: #2caae2;
-  border: none;
+  border: 2px solid #2b386c;
   margin-bottom: 64px;
 }
 
@@ -523,20 +543,12 @@ li {
   align-items: center;
 }
 .benefits-top h1 {
-  font-size: 40px;
-  text-transform: uppercase;
-  line-height: 48px;
-  color: #2f3e7b;
   padding: 0 0 24px 0;
 }
-.benefits-top p {
+.benefits-top-p {
   max-width: 987px;
   text-align: center;
   padding-bottom: 41px;
-  font-size: 16px;
-  line-height: 24px;
-  color: #2b386c;
-  font-family: "Roboto", sans-serif;
 }
 .benefits-main {
   padding: 80px 0;
@@ -548,19 +560,7 @@ li {
   background: #fff;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
   padding: 16px;
-  min-height: 248px;
 }
-
-.benefit-container h3 {
-  padding: 16px 0;
-}
-.benefit-container p {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
 .benefits-bottom {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -575,9 +575,6 @@ li {
   position: relative;
 }
 .customers-heading h1 {
-  font-size: 48px;
-  line-height: 48px;
-  color: #fff;
   text-align: center;
   padding: 80px 0 56px 0;
 }
@@ -599,18 +596,14 @@ li {
 .customers-right img {
   width: 100%;
 }
-.customers-left h3,
-.customers-right h3 {
+.customers-common-tittle {
   font-size: 20px;
   line-height: 32px;
-  color: #2b386c;
   font-weight: 700;
   padding-top: 13px;
 }
-.customers-left p,
-.customers-right p {
+.customers-common-bio {
   font-size: 16px;
-  color: #2b386c;
   line-height: 19px;
   padding: 11px 0 17px 0;
 }
@@ -621,23 +614,10 @@ li {
   background: rgba(255, 255, 255, 0.2);
   padding: 14px 14px 10px 10px;
 }
-.swipe-me h3 {
-  font-size: 18px;
-  color: #fff;
-  line-height: 24px;
-}
-
-.swipe-me p {
-  color: #fff;
-  font-size: 16px;
-  line-height: 23px;
-  padding-top: 15px;
-  padding-bottom: 24px;
-  margin-bottom: 32px;
-}
 .swipe-heading {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .swipe-main {
   display: flex;
@@ -656,25 +636,18 @@ li {
   margin-bottom: -140px;
   margin-top: 88px;
 }
-
-.float-content h1 {
-  font-size: 40px;
-  line-height: 48px;
+.float-content-h1 {
   text-align: center;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #fff;
   padding-bottom: 24px;
 }
-.float-content p {
+.float-content-p {
   font-size: 24px;
-  color: #fff;
   line-height: 32px;
   font-weight: 700;
   text-align: center;
   padding-bottom: 32px;
 }
-.float-content button {
+.float-content-button {
   padding: 17.48px 0 18.52px 0;
   color: #2caae2;
   border-radius: 52px;
@@ -696,11 +669,8 @@ li {
 
 /* research-section */
 
-.research-main h1 {
+.research-main-h1 {
   padding-top: 212px;
-  font-size: 40px;
-  line-height: 48px;
-  color: #2f3e7b;
   font-weight: 700;
   text-align: center;
 }
@@ -720,24 +690,8 @@ li {
   border-radius: 8px;
   background: #fff;
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.09);
-  min-height: 466px;
-  /* max-width: 278px; */
   justify-items: center;
-}
-.Result h3 {
-  font-size: 20px;
-  color: #2b386c;
-  font-weight: 400;
-  font-family: "Oswald", sans-serif;
-  padding: 13px 0 8px 0;
-}
-
-.Result p {
-  color: #151c37;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 300;
-  font-family: "Roboto", sans-serif;
+  max-width: 278px;
 }
 .research-button {
   margin: 56px 0;
@@ -756,7 +710,6 @@ li {
   max-width: 329px;
   width: 100%;
 }
-
 .swiper_section {
   display: flex;
   gap: 10px;
@@ -766,24 +719,18 @@ li {
 
 @media screen and (max-width: 1290px) {
   /* banner section */
-
   .banner-left h1 {
     font-size: 43px;
   }
-
   /* expert section */
-
   .expertperson {
     grid-template-columns: repeat(3, 1fr);
   }
   /* about sectino */
-
   .about-content {
     padding-right: 0;
   }
-
   /* expert-section */
-
   .expert-1 {
     left: 260px;
   }
@@ -807,7 +754,6 @@ li {
   .expert-middle {
     left: 255px;
   }
-
   .banner-left h1 {
     padding-top: 50px;
   }
@@ -833,8 +779,8 @@ li {
   }
   .banner-left h1,
   .banner-left p {
-    color: #fff;
     text-align: center;
+    color: #fff;
   }
   .nav-logo img {
     display: none;
@@ -843,7 +789,7 @@ li {
     position: fixed;
     background-color: #fff;
     width: 100%;
-    top: -500%;
+    top: -100%;
     right: 0;
     transition: 0.5s ease;
   }
@@ -871,13 +817,10 @@ li {
     align-items: center;
   }
   /* benefits section */
-
   .benefits-bottom {
     grid-template-columns: repeat(3, 1fr);
   }
-
   /* customer section */
-
   .customer-cont {
     flex-direction: column;
     align-items: center;
@@ -914,10 +857,6 @@ li {
   .footer-main {
     padding: 15px;
   }
-  /* .expert{
-   min-width: none;
-   max-width: 220px;
-  } */
 }
 
 @media screen and (max-width: 768px) {
@@ -962,7 +901,7 @@ li {
     left: 115px;
   }
   .logic-main1 {
-    left: 390px;
+    left: 190px;
     top: 122px;
   }
   .logic-main2 {
@@ -974,7 +913,7 @@ li {
     left: 80px;
   }
   .logic-main4 {
-    right: 400px;
+    right: 200px;
     top: 70px;
   }
   .logic-main5 {
@@ -992,20 +931,17 @@ li {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .benefits-top h1,
-  .customers-heading h1,
-  .float-content h1,
-  .research-main h1 {
-    font-size: 35px;
+  .main-common-heading {
+    font-size: 30px;
   }
   .banner-left h1 {
     font-size: 36px;
     line-height: 51px;
   }
-  .expert h3 {
+  .expert-heading {
     font-size: 13px;
   }
-  .expert p {
+  .expert-bio {
     font-size: 10px;
   }
   .expert img {
@@ -1015,10 +951,10 @@ li {
     flex-direction: column;
     row-gap: 10px;
   }
-  .expert{
+  .expert {
     min-width: 220px;
   }
-  .common-font-grey{
+  .common-font-grey {
     font-size: 13.5px;
     line-height: 25px;
   }
@@ -1072,15 +1008,15 @@ li {
     right: -12px;
     top: 365px;
   }
-  .expert{
+  .expert {
     max-width: 294px;
+  }
+  .float-content-p {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 425px) {
-  .benefits-top h1,
-  .customers-heading h1,
-  .float-content h1,
-  .research-main h1 {
+  .main-common-heading {
     font-size: 26px;
   }
   .aboutvero-bottom-right h1 {
@@ -1090,7 +1026,19 @@ li {
   .aboutvero-bottom-left img {
     width: 100%;
   }
-  .benefits-bottom{
-    grid-template-columns: repeat(1,1fr);
+  .benefits-bottom {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .expert-1 {
+    left: 90px;
+    top: -15px;
+  }
+  .expert-3 {
+    left: 60px;
+    top: 278px;
+  }
+  .expert-middle {
+    left: -15px;
+    top: 168px;
   }
 }
