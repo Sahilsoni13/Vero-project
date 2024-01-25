@@ -2,12 +2,14 @@ import React from "react";
 import Advice from "../../json/research.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { Fade } from "react-reveal";
 const Research = () => {
   return (
     <>
       <section className="research-section">
         <div className="container">
           <div className="research-main">
+            <Fade >
             <h1 className="main-common-heading research-main-h1 common-bg-midblue">ADVICE, RESEARCH, TECHNIQUES AND MORE</h1>
             <div className="researches">
               <Swiper
@@ -50,9 +52,12 @@ const Research = () => {
                 })}
               </Swiper>
             </div>
+            </Fade>
+            <Fade >
             <div className="research-button">
               <button type="button" className="liquid-capsules">View All posts</button>
             </div>
+            </Fade>
           </div>
         </div>
       </section>

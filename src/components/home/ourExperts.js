@@ -4,6 +4,7 @@ import Expertimg from "../images/expertimg.png";
 // import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { Fade } from "react-reveal";
 const OurExperts = () => {
   return (
     <>
@@ -11,9 +12,12 @@ const OurExperts = () => {
         <div className="container">
           <div className="expertsmain">
             <div className="experttop">
+              <Fade >
               <div className="expertheading">
                 <h1 className="main-common-heading common-bg-midblue">Designed by experts </h1>
               </div>
+              </Fade>
+              <Fade>
               <div className="expertperson">
                 <Swiper
                   className="mySwiper"
@@ -54,8 +58,11 @@ const OurExperts = () => {
                   })}
                 </Swiper>
               </div>
+              </Fade>
             </div>
             <div className="expertbottom">
+              <Fade >
+
               <div className="expert-bottom-left">
                 <h1 className="common-bg-blue">Our Journey</h1>
                 <p className="common-dark-blue">
@@ -76,9 +83,12 @@ const OurExperts = () => {
                 </p>
                 <p></p>
               </div>
+              </Fade>
+              <Fade>
               <div className="expert-bottom-right">
                 <img src={Expertimg} alt="" />
               </div>
+              </Fade>
             </div>
           </div>
         </div>

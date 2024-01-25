@@ -11,6 +11,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 // import required modules
 import { Navigation, Pagination } from "swiper/modules";
+import { Fade } from "react-reveal";
 const Customers = () => {
   const data = [
     {
@@ -57,6 +58,8 @@ const Customers = () => {
         <div className="container">
           <div className="customers-main">
             <div className="customers-top">
+              <Fade >
+
               <div className="customers-heading">
                 <h1 className="main-common-heading common-white  ">HEAR FROM OUR CUSTOMERS</h1>
                 <div className="customer-cont">
@@ -84,6 +87,7 @@ const Customers = () => {
                   </div>
                 </div>
               </div>
+              </Fade>
               <div className="swipe-main">
                 <img
                   onClick={() => swiperRef.current?.slidePrev()}
@@ -139,6 +143,7 @@ const Customers = () => {
                 />
               </div>
               <div className="float-main">
+                <Fade >
                 <div className="float-content">
                   <h1 className="float-content-h1 main-common-heading common-white">POWER UP YOUR RECOVERY</h1>
                   <p className="float-content-p common-white">
@@ -149,6 +154,7 @@ const Customers = () => {
                     <button type="button" className="float-content-button ">Shop Now </button>
                   </div>
                 </div>
+                </Fade>
               </div>
             </div>
           </div>

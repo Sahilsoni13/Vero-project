@@ -3,11 +3,13 @@ import Ankle from "../images/Ankle.png";
 import img1 from "../images/img1.png";
 import img2 from "../images/img2.png";
 import img3 from "../images/img3.png";
+import { Fade } from "react-reveal";
 // import Bannerbg from "../images/banner-bg.png"
 const Banner = () => {
   return (
     <>
       <section className="banner-section">
+      <Fade>
         <div className="container">
           <div className="banner-main">
             <div className="banner-left">
@@ -19,9 +21,11 @@ const Banner = () => {
                 athletes,weekend warriors, injury recovery, and those looking
                 for extra ankle support for everyday activities.
               </p>
+              <div className="banner-button">
               <button type="button " className="solid-capsules common-white">
                 Shop Now
               </button>
+              </div>
             </div>
             <div className="banner-right">
               <div className="abc">
@@ -69,7 +73,7 @@ const Banner = () => {
                       </p>
                     </div>
                   </div>
-                </div>
+                </div>         
               </div>
             </div>
           </div>
@@ -86,7 +90,7 @@ const Banner = () => {
           <h1>Flexible</h1>
           <h1>Supportive</h1>
         </div>
-        {/* <img src={Bannerbg} alt="" /> */}
+        </Fade>
       </section>
     </>
   );

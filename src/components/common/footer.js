@@ -1,10 +1,13 @@
 import React from 'react'
 import Footerlogo from "../images/footerlogo.png"
 import Card from "../../json/card.json"
+import { Fade } from 'react-reveal'
+
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
+        <Fade>
         <div className="footer-main">
             <div className="footer-top">
          <div className="footer-left">
@@ -54,7 +57,9 @@ const Footer = () => {
                    }
                 </div>
             </div>
+
         </div>
+        </Fade>
         </div>
     </footer>
   )

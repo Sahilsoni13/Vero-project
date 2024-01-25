@@ -112,7 +112,6 @@ a {
   transition: 0.2s ease;
   cursor: pointer;
 }
-
 .header {
   background: #fff;
   margin-top: 0;
@@ -182,6 +181,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 67px;
+  column-gap: 30px;
 }
 .banner-heading {
   font-size: 53px;
@@ -226,6 +226,7 @@ a {
 .banner-section{
   overflow: hidden;
   position: relative;
+  padding-right: 100px;
 }
 .banner-section::after{
   content: '';
@@ -247,6 +248,7 @@ a {
   flex-direction: column;
   display: flex;
   z-index: 15;
+  right: -19%;
 }
 .def1 {
   margin-left: 4.5vw;
@@ -256,9 +258,9 @@ a {
   margin-left: 6vw;
   margin-bottom: 95px;
 }
-.def3 {
+/* .def3 {
   margin-left: 4.5vw;
-}
+} */
 .banner-bg-blue {
   background-color: #222f63;
 }
@@ -776,7 +778,7 @@ footer {
  .def{
   top: 14vw;
  }
- .def1{
+ /* .def1{
   margin-left: 21.5vw;
  }
  .def2{
@@ -784,7 +786,7 @@ footer {
  }
  .def3{
   margin-left: 16.5vw;
- }
+ } */
  .abc::before{
   right: -37%;
   top: -225px;
@@ -803,17 +805,17 @@ footer {
   .about-content {
     padding-right: 0;
   }
-  .bannerimg {
+  /* .bannerimg {
     padding-right: 100px;
-  }
+  } */
 }
 @media screen and (max-width: 1140px) {
   .banner-left h1 {
     padding-top: 50px;
   }
-  .bannerimg {
+  /* .bannerimg {
     padding-right: 75px;
-  }
+  } */
   .researches {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -824,6 +826,10 @@ footer {
   .banner-section {
     background: #2b386c;
     overflow: hidden;
+    padding: 0;
+  }
+  .def{
+    right: 0;
   }
   .banner-left {
     margin-bottom: 40px;
@@ -1089,4 +1095,12 @@ footer {
     left: -15px;
     top: 168px;
   }
+  .def1 {
+    margin-left: 4.5vw;
+    margin-bottom: 148px;
+}
+.def2 {
+  margin-left: -21vw;
+  margin-bottom: 78px;
+}
 }

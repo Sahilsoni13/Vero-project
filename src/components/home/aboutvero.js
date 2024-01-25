@@ -9,12 +9,15 @@ import Design6 from "../images/design6.png";
 import Verorunner from "../images/verorunner.png"
 import Verogroup from '../images/verogroup.png'
 import Aboutcontent from '../../json/aboutvero.json'
+import { Fade } from "react-reveal";
+
 const Aboutvero = () => {
   return (
     <>
       <section className="about-vero">
         <div className="container">
         <div className="aboutvero-main">
+          <Fade >
           <div className="aboutvero-top">
             <div className="aboutvero-heading">
               <h1 className="main-common-heading common-white">The Vero Ankle™ Brace</h1>
@@ -101,6 +104,8 @@ const Aboutvero = () => {
               </div>
             </div>
           </div>
+          </Fade>
+          <Fade >
           <div className="aboutvero-middle">
             <div className="aboutvero-middle-left">
               <h1 className="benefits-h1 common-white">Designed With Humans In Mind</h1>
@@ -123,6 +128,8 @@ const Aboutvero = () => {
               <img src={Verorunner} alt="" />
             </div>
           </div>
+          </Fade>
+          <Fade >
           <div className="aboutvero-bottom">
             <div className="aboutvero-bottom-left">
                <img src={Verogroup} alt="" />
@@ -143,10 +150,13 @@ const Aboutvero = () => {
             </div>
             </div>
           </div>
+          </Fade>
+          <Fade >
           <div className="aboutvero-button">
           <button type="button " className="common-white solid-capsules">Shop Now</button>
 
           </div>
+          </Fade>
         </div>
         </div>
       </section>

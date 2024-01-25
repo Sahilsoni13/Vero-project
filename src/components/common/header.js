@@ -4,11 +4,13 @@ import Logomain from "../images/logomain.png";
 import Search from "../images/search.png";
 import Profile from "../images/profile.png";
 import Cart from "../images/cart.png";
+import { Fade } from "react-reveal";
 const Header = () => {
   const [open, setopen] = useState(false);
   return (
     <header className="header">
       <div className="container">
+        <Fade >
         <div className="hide-logo ">
           <img src={Logomain} />
           <i
@@ -18,7 +20,7 @@ const Header = () => {
           ></i>
         </div>
         <nav
-          className={open === true ? " navigation addme" : "navigation"}
+          className={open === true ? " navigation addme " : "navigation "}
           id="nav"
         >
           <div className="nav-logo">
@@ -72,6 +74,7 @@ const Header = () => {
             <img src={Cart} />
           </div>
         </nav>
+        </Fade>
         <Outlet />
       </div>
     </header>
